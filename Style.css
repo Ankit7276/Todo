@@ -1,114 +1,30 @@
-*,
-*:before,
-*:after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body{
-    height: 100vh;
-    background: linear-gradient( 135deg, #8052ec, #d161ff);
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
 
-.container{
-    /* border: 2px solid white; */
-    width: 40%;
-    min-width: 450px;
-    position: absolute;
-    transform: translate(-50% -56%);
-    top: 10%;
-    left: 30%;
-    padding: 30px 20px;
-}
+</head>
 
-#newtask{
-    position: relative;
-    background-color: #ffffff;
-    padding: 30px 20px;
-    border-radius: 5px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0);
+<body>
 
-}
+    <Div class = 'container'>
+        <div id = 'newtask'>
+            <input type="text" placeholder="Task to be done">
+            <button id = 'push' >Add</button>
+        </div>
 
-#newtask input{
-    width: 70%;
-    width: 70%;
-    height: 45px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    border: 2px solid #d1d3d4;
-    padding: 12px;
-    color: #111111;
-    font-weight: 500;
-    position: relative;
-    border-radius: 5px;
+        <div id="tasks"> </div>
 
-}
+      
 
-#newtask input:focus{
-    outline: none;
-    border-color:#8052ec ;
-}
+    </Div>
 
-#newtask button{
-    position: relative;
-    float: right;
-    width: 20%;
-    height: 45px;
-    border-radius: 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    background-color: #8052ec;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-}
+</body>
 
-#tasks{
-background-color: #ffffff;
-padding: 30px 20px;
-margin-top: 60px;
-border-radius: 10px;
-box-shadow: 0 15px 30px rgba(0, 0, 0, 0);
-width: 100%;
-position: relative;
-}
-
-.task{
-    background-color: #ffffff;
-    height: 50px;
-    padding: 5px 10px;
-    margin-top:10px ;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 2px solid #d1d3d4;
-    cursor: pointer;
-
-}
-
-.task span {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-
-}
-
-.task button {
-
-    background-color: #8052ec;
-    color: #ffffff;
-    height: 100%;
-    width: 40px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    outline: none0;
-
-}
-
-.completed{
-    text-decoration: line-through;
-}
+<script src="test.js"></script>
+</html>
